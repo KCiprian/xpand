@@ -1,0 +1,90 @@
+.planet-info-card {
+    display: inline-block;
+    margin: 1vw;
+    width: 90%;
+    max-height: 10%;
+  }
+  
+.planet-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: 4px;
+}
+
+.logo-container {
+  width: 100%;
+  height: 160px;
+
+  border-radius: 3px;
+  padding: 1rem;
+  margin: 1rem 0rem;
+}
+.img-logo {
+  width: 100%;
+  height: auto;
+}
+.org-details p {
+  margin: 0.3rem;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  //-webkit-transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .user-card {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .user-card-right {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  float: right;
+}
+
+.action-buttons {
+  display: inline-block;
+  position: absolute;
+  //float: right;
+}
+
+.card .general {
+  text-align: left;
+  width: 60%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+  display: inline-block;
+}
+
+.buttondiv {
+  margin-right: 10px;
+  margin-top: 10px;
+  float: right;
+}
+
+.mat-success {
+  background-color: #a75f69;
+  color: #fff;
+}

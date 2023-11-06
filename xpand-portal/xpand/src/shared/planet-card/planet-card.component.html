@@ -1,0 +1,24 @@
+<mat-card class="planet-info-card">
+  <div class="card">
+    <div class="user-card">
+      <div class="points center">
+        <h5>{{planet.planetName}}</h5>
+      </div>
+    </div>
+    <div class="general">
+      <h5>"{{ planet.planetDescription}}"</h5>
+      <h6>By Captain: {{ getCaptains() }}</h6>
+      <h6>Robots: {{ getRobots() }} </h6>
+    </div>
+    <div class="user-card-right">
+      <div class="center">
+        <h5> {{enum[planet.planetStatus!]}} </h5>
+      </div>
+      <div class="buttondiv">
+        <button mat-mini-fab color="success" (click)="openModalUpdatePlanet(planet)">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</mat-card>

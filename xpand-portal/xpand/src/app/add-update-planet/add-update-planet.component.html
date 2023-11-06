@@ -1,0 +1,33 @@
+<div class="mat-dialog">
+    <h6 class="mat-dialog-title center">Edit Planet</h6>
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+        <mat-dialog-content>
+        <div class="spacer">
+            <mat-form-field appearance="fill">
+                <mat-label>Planet Name</mat-label>
+                <input matInput placeholder="Name" formControlName="name">
+            </mat-form-field>
+        </div> 
+        <div class="spacer">
+            <mat-form-field appearance="fill">
+                <mat-label>Planet Description</mat-label>
+                <input matInput placeholder="Description" formControlName="description">
+            </mat-form-field>
+        </div>  
+        <div class="spacer">
+            <mat-form-field appearance="fill">
+                <mat-label>Planet Status</mat-label>
+                <input matInput placeholder="Status" formControlName="status">
+            </mat-form-field>
+        </div>
+        <div class="spacer">
+            <label for="formFile" class="form-label">Upload file example</label>
+            <input (change)="this.onFilechange($event)" class="form-control" type="file" id="formFile">
+        </div>
+        </mat-dialog-content>
+        <mat-dialog-actions align="end">
+            <button mat-stroked-button mat-dialog-close>Cancel</button>
+            <button mat-stroked-button color="primary" [disabled]="loading" type="submit">{{action}}</button>
+        </mat-dialog-actions>
+    </form>
+</div>
